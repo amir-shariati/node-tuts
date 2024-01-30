@@ -3,4 +3,5 @@ const printName = (param) => {
     console.log(param)
 }
 
-module.exports = {name, printName}
+module.exports.newName = name
+module.exports.logName = printName
