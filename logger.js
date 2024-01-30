@@ -3,7 +3,6 @@ const printName = (param) => {
     console.log(param)
 }
 
-module.exports = {
-    pName: name,
-    printName
-}
+// exports = {pName: name}
+exports.name = name
+exports.printName =printName
