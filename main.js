@@ -7,7 +7,7 @@ const server = http.createServer((req, res)=>{
 
 server.listen(3000, ()=>{
     console.log("server is running on port 3000")
-    logger.logName('Foo')
-    console.log(logger.newName)
+    logger.printName("Bar")
+    console.log(logger.pName)
     }
 )
