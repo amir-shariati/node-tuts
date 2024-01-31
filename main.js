@@ -1,5 +1,8 @@
-const http = require("http")
-const logger = require('./logger')
+// const http = require("http")
+import http from 'http'
+import chalk from 'chalk';
+// const logger = require('./logger')
+import {name as logger_name, printName} from './logger.js'
 
 const server = http.createServer((req, res)=>{
     console.log(req)
