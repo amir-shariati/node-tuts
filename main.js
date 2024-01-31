@@ -9,8 +9,8 @@ const server = http.createServer((req, res)=>{
 })
 
 server.listen(3000, ()=>{
-    console.log("server is running on port 3000")
-    logger.printName("Bar")
-    console.log(logger.name)
+    console.log(chalk.green("server is running on port 3000"))
+    printName(chalk.red("Bar"))
+    console.log(chalk.bgWhite(chalk.black(logger_name)))
     }
 )
