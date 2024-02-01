@@ -20,5 +20,8 @@
   "homepage": "https://github.com/amir-shariati/node-tuts#readme",
   "dependencies": {
     "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.15"
   }
 }
