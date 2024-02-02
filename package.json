@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon 003-process.js"
   },
-  "type": "module",
+  "//": {"type": "module"},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/amir-shariati/node-tuts.git"
