@@ -9,6 +9,12 @@ yargs.commands({
             describe: "user full name",
             demandOption: true,
             type: "string"
+        },
+        phone:{
+            alias: "p",
+            describe: "user phone number",
+            demandOption: true,
+            type: "number"
         }
     }
 })
