@@ -480,5 +480,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-!/test-write-file.txt
-/test-write-file.txt
+!/004-test-write-file.txt
+/004-test-write-file.txt
