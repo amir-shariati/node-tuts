@@ -1,4 +1,5 @@
 const fs = require("fs")
+const {type} = require("os");
 
 const data = [
     {id:1, fullName: "Amir Shariati"},
@@ -7,3 +8,8 @@ const data = [
 ]
 
 fs.writeFileSync('005-contact.json', JSON.stringify(data))
+
+const read_data = fs.readFileSync('005-contact.json')
+
+console.log(read_data)
+console.log(typeof read_data)
