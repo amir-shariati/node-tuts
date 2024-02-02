@@ -482,3 +482,4 @@ FodyWeavers.xsd
 
 !/004-test-write-file.txt
 /004-test-write-file.txt
+/005-contact.json
