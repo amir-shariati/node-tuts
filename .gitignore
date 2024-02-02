@@ -481,3 +481,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 !/test-write-file.txt
+/test-write-file.txt
