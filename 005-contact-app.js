@@ -15,6 +15,12 @@ yargs.commands({
             describe: "user phone number",
             demandOption: true,
             type: "number"
+        },
+        email:{
+            alias: "e",
+            describe: "user email",
+            demandOption: true,
+            type: "string"
         }
     }
 })
