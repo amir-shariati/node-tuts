@@ -5,3 +5,5 @@ const data = [
     {id:2, fullName: "Ali Shariati"},
     {id:3, fullName: "Fati Shariati"},
 ]
+
+fs.writeFileSync('005-contact.json', JSON.stringify(data))
