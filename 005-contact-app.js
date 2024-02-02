@@ -1,9 +1,16 @@
 const yargs = require("yargs")
 
-const data = [
-    {id:1, fullName: "Amir Shariati"},
-    {id:2, fullName: "Ali Shariati"},
-    {id:3, fullName: "Fati Shariati"},
-]
+yargs.commands({
+    command: "create",
+    describe: "creat new user",
+    builder: {
+        fullname: {
+            alias: "f",
+            describe: "user full name",
+            demandOption: true,
+            type: "string"
+        }
+    }
+})
 
 console.log(yargs.argv)
