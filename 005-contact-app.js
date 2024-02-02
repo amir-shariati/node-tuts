@@ -11,7 +11,7 @@ const data = [
 fs.writeFileSync('005-contact.json', JSON.stringify(data))
 
 const read_data = fs.readFileSync('005-contact.json')
-const data_obj = JSON.parse(read_data)
+const data_obj = JSON.parse(read_data.toString())
 console.log(read_data.toString())
 console.log(data_obj[0]?.fullName)
 console.log(typeof read_data)
