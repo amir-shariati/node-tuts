@@ -2,10 +2,10 @@
   "name": "tuts",
   "version": "1.0.0",
   "description": "",
-  "main": "002-main.js",
+  "main": "003-process.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon 002-main.js"
+    "start": "nodemon 003-process.js"
   },
   "type": "module",
   "repository": {
