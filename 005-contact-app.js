@@ -29,4 +29,5 @@ yargs.commands({
     }
 })
 
-console.log(yargs.argv)
+// console.log(yargs.argv)
+yargs.parse()
