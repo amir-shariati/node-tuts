@@ -24,3 +24,7 @@ const loadContacts = () => {
     }
 
 }
+
+module.exports = {
+    addContact,
+}
