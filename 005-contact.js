@@ -22,6 +22,14 @@ const listContacts = () => {
     })
 }
 
+const removeContact = (fullName) => {
+    const contacts = loadContacts()
+    const data = contacts.filter( contacts=>contacts.fullName !== fullName)
+    saveContact(data)
+    console.log('contact has been removed')
+    console.log(data)
+}
+
 const loadContacts = () => {
     try {
         const contactBuffer = fs.readFileSync('005-contact.json')
