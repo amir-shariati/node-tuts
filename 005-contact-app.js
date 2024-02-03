@@ -39,5 +39,22 @@ yargs.commands({
     }
 })
 
+yargs.commands({
+    command: "remove",
+    aliases: "r",
+    describe: "remove contact",
+    builder: {
+        fullName: {
+            alias: "f",
+            describe: "user full name",
+            demandOption: true,
+            type: "string"
+        }
+    },
+    handler: ({fullName})=>{
+        removeContact(fullName)
+    }
+})
+
 // console.log(yargs.argv)
 yargs.parse()
