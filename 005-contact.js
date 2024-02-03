@@ -29,10 +29,7 @@ const loadContacts = () => {
 }
 
 const saveContact = (contacts) => {
-    console.log(contacts)
     const data = JSON.stringify(contacts)
-    console.log(data)
-    console.log(data.toString())
     fs.writeFileSync('005-contact.json', data)
 }
 
