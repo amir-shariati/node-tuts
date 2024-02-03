@@ -21,7 +21,10 @@ yargs.commands({
             describe: "user email",
             demandOption: true,
             type: "string"
-        }
+        },
+    },
+    handler: (fullName, phone, email )=>{
+        console.log('contact is added')
     }
 })
 
