@@ -3,7 +3,8 @@ const {addContact, listContacts} = require('./005-contact')
 
 yargs.commands({
     command: "create",
-    describe: "creat new user",
+    aliases: "c",
+    describe: "creat new contact",
     builder: {
         fullName: {
             alias: "f",
