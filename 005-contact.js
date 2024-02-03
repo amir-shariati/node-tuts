@@ -1,6 +1,8 @@
 const fs = require('fs')
 
 const addContact = (fullName, phone, email) => {
+    const contacts = loadContacts()
+    const isDuplicate = contacts.find(c=>c.fullName === fullName)
 
 }
 
