@@ -8,7 +8,7 @@ const loadContacts = () => {
     try {
         const contactBuffer = fs.readFileSync('005-contact.json')
         const contacts = contactBuffer.toString()
-        return JSON.parse(constants)
+        return JSON.parse(contacts)
     }
     catch (e){
         console.log(e)
