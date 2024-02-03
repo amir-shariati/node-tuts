@@ -24,7 +24,7 @@ yargs.commands({
             type: "string"
         },
     },
-    handler: (fullName, phone, email )=>{
+    handler: ({fullName, phone, email} )=>{
         addContact(fullName, phone, email)
     }
 })
