@@ -49,4 +49,5 @@ const saveContact = (contacts) => {
 module.exports = {
     addContact,
     listContacts,
+    removeContact,
 }
