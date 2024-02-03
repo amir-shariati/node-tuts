@@ -24,7 +24,6 @@ const loadContacts = () => {
         return JSON.parse(contacts)
     }
     catch (e){
-        console.log(e)
         return []
     }
 
