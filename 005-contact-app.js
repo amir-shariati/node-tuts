@@ -1,4 +1,5 @@
 const yargs = require("yargs")
+const {addContact} = require('./005-contact')
 
 yargs.commands({
     command: "create",
