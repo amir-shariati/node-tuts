@@ -8,6 +8,8 @@ const addContact = (fullName, phone, email) => {
     const isDuplicate = contacts.find(c=>c.fullName === fullName)
 
     if (!isDuplicate){
+        contacts.push({fullName, phone, email})
+        saveContact(contacts)
         console.log("contact is added")
     }
     else {
