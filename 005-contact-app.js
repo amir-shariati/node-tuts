@@ -30,5 +30,14 @@ yargs.commands({
     }
 })
 
+yargs.commands({
+    command: "list",
+    aliases: "l",
+    describe: "list all contacts",
+    handler: ()=>{
+        listContacts()
+    }
+})
+
 // console.log(yargs.argv)
 yargs.parse()
