@@ -5,7 +5,7 @@ yargs.commands({
     command: "create",
     describe: "creat new user",
     builder: {
-        fullname: {
+        fullName: {
             alias: "f",
             describe: "user full name",
             demandOption: true,
