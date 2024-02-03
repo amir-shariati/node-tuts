@@ -25,7 +25,7 @@ yargs.commands({
         },
     },
     handler: (fullName, phone, email )=>{
-        console.log('contact is added')
+        addContact(fullName, phone, email)
     }
 })
 
