@@ -17,6 +17,14 @@ const addContact = (fullName, phone, email) => {
     }
 }
 
+const listContacts = () => {
+    const contacts = loadContacts()
+    contacts.forEach( contact => {
+        console.log(`\tfullName: ${contact.fullName}\t phone: ${contact.phone}\t email: ${contact.email}`)
+        console.log(`\t-----------------------------------------`)
+    })
+}
+
 const loadContacts = () => {
     try {
         const contactBuffer = fs.readFileSync('005-contact.json')
