@@ -26,7 +26,6 @@ const loadContacts = () => {
     catch (e){
         return []
     }
-
 }
 
 const saveContact = (contacts) => {
