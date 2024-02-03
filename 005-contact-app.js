@@ -1,5 +1,5 @@
 const yargs = require("yargs")
-const {addContact, listContacts} = require('./005-contact')
+const {addContact, listContacts, removeContact} = require('./005-contact')
 
 yargs.commands({
     command: "create",
