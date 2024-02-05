@@ -2,10 +2,10 @@
   "name": "tuts",
   "version": "1.0.0",
   "description": "",
-  "main": "004-os-fs.js",
+  "main": "005-contact-app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon 004-os-fs.js"
+    "start": "nodemon 005-contact-app.js"
   },
   "//": {
     "type": "module"
