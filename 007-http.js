@@ -43,6 +43,14 @@ const server = http.createServer((req, res)=>{
             console.log('\n')
         })
 
+        req.on('end', ()=>{
+            const data = buffer.concat().toString()
+            const data2 = Buffer.concat(buffer).toString()
+            console.log(data)
+            console.log(data2)
+            console.log('\n')
+        })
+
         res.writeHead(302, {Location: '/'})
         return res.end()
     }
