@@ -6,4 +6,8 @@ em.addListener('event1', data=>{
     console.log('event1: ', data)
 })
 
+em.on('event2', data=>{
+    console.log('event2: ', data)
+})
+
 em.emit('event1', "This is first event")
