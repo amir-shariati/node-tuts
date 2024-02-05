@@ -37,7 +37,11 @@ const server = http.createServer((req, res)=>{
     else if (url === '/msg' && method === 'POST'){
         const buffer = []
 
-        req.on('data', ()=>{})
+        req.on('data', (data)=>{
+            buffer.push(data)
+            console.log(data)
+            console.log('\n')
+        })
 
         res.writeHead(302, {Location: '/'})
         return res.end()
