@@ -2,10 +2,10 @@
   "name": "tuts",
   "version": "1.0.0",
   "description": "",
-  "main": "005-contact-app.js",
+  "main": "006-events.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon 005-contact-app.js"
+    "start": "nodemon 006-events.js"
   },
   "//": {
     "type": "module"
