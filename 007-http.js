@@ -47,7 +47,10 @@ const server = http.createServer((req, res)=>{
             const data2 = Buffer.concat(buffer).toString()
             console.log(data)
             console.log(data2)
-            console.log('\n')
+
+            const msg = data.split('=')[1]
+            console.log(msg)
+            fs.writeFileSync('007-form-data.txt', msg)
         })
 
         res.writeHead(302, {Location: '/'})
