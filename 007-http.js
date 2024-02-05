@@ -9,6 +9,7 @@ const server = http.createServer((req, res)=>{
     console.log(`url: ${url} \n method: ${method} \n`)
     console.log('headers: ', headers , '\n')
 
+    res.setHeader('Content-Type', 'text/html')
     res.write('<html>' +
         '<header>' +
         '<title>Hello world</title>' +
