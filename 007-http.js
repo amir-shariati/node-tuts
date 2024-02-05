@@ -40,7 +40,6 @@ const server = http.createServer((req, res)=>{
         req.on('data', (data)=>{
             buffer.push(data)
             console.log(data)
-            console.log('\n')
         })
 
         req.on('end', ()=>{
