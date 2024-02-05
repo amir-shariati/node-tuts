@@ -7,3 +7,7 @@ const server = http.createServer((req, res)=>{
     const headers = req.headers
     console.log(`url: ${url} \n method: ${method} \n headers: ${headers} \n`)
 })
+
+server.listen(3000, ()=>{
+    console.log('server is running on port 3000')
+})
