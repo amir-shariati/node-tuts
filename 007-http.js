@@ -31,6 +31,11 @@ const server = http.createServer((req, res)=>{
         res.write('<html/>')
         return res.end()
     }
+    else if (url === '/msg'){
+        res.statusCode = 302
+        res.setHeader('Location', '/')
+        return res.end()
+    }
 
 })
 
