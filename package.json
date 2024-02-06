@@ -2,10 +2,10 @@
   "name": "tuts",
   "version": "1.0.0",
   "description": "",
-  "main": "007-http.js",
+  "main": "008-express.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon 007-http.js"
+    "start": "nodemon 008-express.js"
   },
   "//": {
     "type": "module"
