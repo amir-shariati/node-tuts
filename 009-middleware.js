@@ -9,6 +9,8 @@ const app = express()
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
+app.use(adminRoutes)
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000')
 })
