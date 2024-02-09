@@ -10,7 +10,9 @@ router.get('/hello', (req, res) => {
 
 router.get('/', (req, res) => {
     console.log(__dirname)
-    res.sendFile(path.join(__dirname,'..', '009-views', 'index.html' ))
+    console.log(rootDir)
+    console.log(path.join(rootDir, '009-views', 'index.html' ))
+    res.sendFile(path.join(rootDir, '009-views', 'index.html' ))
 })
 
 module.exports = router
