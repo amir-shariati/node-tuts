@@ -9,7 +9,7 @@ const app = express()
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use(adminRoutes)
+app.use('/admin', adminRoutes)
 app.use(homeRoutes)
 
 app.listen(3000, () => {
