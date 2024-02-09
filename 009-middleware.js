@@ -7,9 +7,8 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use((req, res, next) => {
-    console.log('Second middleware')
-    res.send('Hello world')
+app.use('/hello', (req, res) => {
+    res.send('<center><h1>Hello World</h1></center>')
 })
 
 app.listen(3000, () => {
