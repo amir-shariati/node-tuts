@@ -11,6 +11,11 @@ app.use('/hello', (req, res) => {
     res.send('<center><h1>Hello World</h1></center>')
 })
 
+app.use('/msg', (req, res) => {
+    console.log(req.body)
+    res.redirect('/')
+})
+
 app.use('/', (req, res) => {
     res.send('<center><h1>Home page</h1></center>')
 })
