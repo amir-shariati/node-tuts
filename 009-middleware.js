@@ -4,10 +4,8 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-app.use((req, res, next) => {
-    console.log('This middleware runs everytime')
-    next()
-})
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use('/hello', (req, res) => {
     res.send('<center><h1>Hello World</h1></center>')
