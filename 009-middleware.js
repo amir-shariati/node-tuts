@@ -17,7 +17,7 @@ app.use('/msg', (req, res) => {
 })
 
 app.use('/', (req, res) => {
-    res.send('<center><h1>Home page</h1></center>')
+    res.send('<center><form action="/msg" method="post"><input type="text" name="msg"><input type="submit"></form></center>')
 })
 
 app.listen(3000, () => {
