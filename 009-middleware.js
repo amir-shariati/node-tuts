@@ -13,7 +13,10 @@ app.get('/hello', (req, res) => {
 
 app.post('/msg', (req, res) => {
     console.log(req.body)
-    res.redirect('/')
+    fs.writeFile('007-form-data.txt', req.body.msg, err=>{
+        if (err) throw err
+        res.redirect('/')
+    })
 })
 
 app.get('/', (req, res) => {
