@@ -1,6 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 
+const adminRoutes = require('./009-routes/admin')
+
 const app = express()
 
 // parse application/x-www-form-urlencoded
