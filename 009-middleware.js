@@ -7,7 +7,7 @@ const app = express()
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.use('/hello', (req, res) => {
+app.get('/hello', (req, res) => {
     res.send('<center><h1>Hello World</h1></center>')
 })
 
