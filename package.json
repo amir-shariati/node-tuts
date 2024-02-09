@@ -2,10 +2,10 @@
   "name": "tuts",
   "version": "1.0.0",
   "description": "",
-  "main": "008-express.js",
+  "main": "009-middleware.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon 008-express.js"
+    "start": "nodemon 009-middleware.js"
   },
   "//": {
     "type": "module"
