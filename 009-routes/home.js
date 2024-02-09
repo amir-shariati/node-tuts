@@ -2,6 +2,8 @@ const path = require('path')
 const express = require('express')
 const router = express.Router()
 
+const rootDir = require('../utils/path')
+
 router.get('/hello', (req, res) => {
     res.send('<center><h1>Hello World</h1></center>')
 })
