@@ -16,7 +16,7 @@ app.use('/msg', (req, res) => {
     res.redirect('/')
 })
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('<center><form action="/msg" method="post"><input type="text" name="msg"><input type="submit"></form></center>')
 })
 
