@@ -7,7 +7,8 @@ router.get('/hello', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-    res.send('<center><form action="admin/msg" method="post"><input type="text" name="msg"><input type="submit"></form></center>')
+    console.log(__dirname)
+    res.sendFile(path.join(__dirname,'..', '009-views', 'index.html' ))
 })
 
 module.exports = router
