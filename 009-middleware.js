@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const adminRoutes = require('./009-routes/admin')
+const homeRoutes = require('./009-routes/home')
 
 const app = express()
 
