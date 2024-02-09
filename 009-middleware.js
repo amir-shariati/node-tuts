@@ -11,7 +11,7 @@ app.get('/hello', (req, res) => {
     res.send('<center><h1>Hello World</h1></center>')
 })
 
-app.use('/msg', (req, res) => {
+app.post('/msg', (req, res) => {
     console.log(req.body)
     res.redirect('/')
 })
