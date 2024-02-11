@@ -9,6 +9,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static(path.join(__dirname, '010-public')))
 
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
 app.get('/', (req, res) => {
     res.render('index')
 })
