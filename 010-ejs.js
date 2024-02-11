@@ -12,6 +12,9 @@ app.use(express.static(path.join(__dirname, '010-public')))
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
+// set the views path
+app.set('views', '010-views')
+
 app.get('/', (req, res) => {
     res.render('index')
 })
