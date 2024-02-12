@@ -480,7 +480,7 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-!/004-test-write-file.txt
-/004-test-write-file.txt
-/005-contact.json
-/007-form-data.txt
+!/004-os-fs/004-test-write-file.txt
+/004-os-fs/004-test-write-file.txt
+/005-contact/005-contact.json
+/007-form/007-form-data.txt
