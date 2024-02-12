@@ -16,7 +16,11 @@ app.set('view engine', 'ejs');
 app.set('views', '010-views')
 
 app.get('/', (req, res) => {
-    res.render('index')
+    const arr = [
+        {name: 'Amir Shariati', age: 37},
+        {name: 'Ali Shariati', age: 39},
+    ]
+    res.render('index', {homeTitle: 'سازی وب' , objects: arr, home: true})
 })
 
 app.listen(3000, ()=>{
