@@ -2,10 +2,10 @@
   "name": "tuts",
   "version": "1.0.0",
   "description": "",
-  "main": "010-ejs.js",
+  "main": "011-Todo-Project/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon 010-ejs.js"
+    "start": "nodemon 011-Todo-Project/server.js"
   },
   "//": {
     "type": "module"
