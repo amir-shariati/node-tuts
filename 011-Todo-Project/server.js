@@ -18,6 +18,10 @@ app.use(express.static(path.join(__dirname, 'node_modules', 'bootstrap-v4-rtl', 
 app.use(express.static(path.join(__dirname, 'node_modules', 'font-awesome')))
 
 //Routes
+app.get('/', (req, res) => {
+    res.render('index', {pageTitle: 'کارهای روزمره'})
+})
+
 app.listen(3000, () => {
     console.log('server is running on port 3000')
 })
