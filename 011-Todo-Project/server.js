@@ -16,9 +16,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 // Statics
-app.use(express.static(path.join(__dirname, '011-Todo-Project', 'public')))
-app.use(express.static(path.join(rootPath, 'node_modules', 'bootstrap-v4-rtl', 'dist')))
-app.use(express.static(path.join(rootPath, 'node_modules', 'font-awesome')))
+setStatics(app)
 
 //Routes
 app.get('/', (req, res) => {
