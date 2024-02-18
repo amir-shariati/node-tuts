@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 // EJS
 app.set('view engin', 'ejs')
+app.set('views', 'views')
 
 //Routes
 app.listen(3000, () => {
