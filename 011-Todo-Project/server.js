@@ -12,6 +12,9 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.set('view engin', 'ejs')
 app.set('views', 'views')
 
+// Statics
+app.use(express.static(path.join(__dirname, '011-Todo-Project', 'public')))
+
 //Routes
 app.listen(3000, () => {
     console.log('server is running on port 3000')
