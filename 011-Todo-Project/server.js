@@ -9,8 +9,8 @@ const app = express()
 app.use(bodyParser.urlencoded({extended: false}))
 
 // EJS
-app.set('view engin', 'ejs')
-app.set('views', 'views')
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'))
 
 // Statics
 app.use(express.static(path.join(__dirname, '011-Todo-Project', 'public')))
