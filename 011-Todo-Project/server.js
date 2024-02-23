@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 
 const rootPath = require('./utils/path')
 const {setStatics} = require('./utils/statics')
+const adminRoutes = require('./routes/admin')
 
 const app = express()
 
