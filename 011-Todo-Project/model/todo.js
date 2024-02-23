@@ -14,6 +14,7 @@ class Todo {
     save(callback){
         fs.writeFile(filePath, JSON.stringify(this), (err)=>{
             if(err) callback(err)
+            else callback(null)
         })
     }
 }
