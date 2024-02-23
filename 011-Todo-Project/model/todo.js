@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const rootDir = require('../utils/path')
-const filePath = path.join(rootDir, 'data', 'todos.json')
+const filePath = path.join(rootDir,'011-Todo-Project', 'data', 'todos.json')
 
 class Todo {
     constructor(id, text, completed = false) {
