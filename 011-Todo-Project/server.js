@@ -20,6 +20,7 @@ app.set('views', path.join(__dirname, 'views'))
 setStatics(app)
 
 //Routes
+app.use('/admin', adminRoutes)
 app.get('/', (req, res) => {
     res.render('index', {pageTitle: 'کارهای روزمره'})
 })
