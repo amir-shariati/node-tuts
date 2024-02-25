@@ -22,9 +22,7 @@ setStatics(app)
 
 //Routes
 app.use('/admin', adminRoutes)
-app.get('/', (req, res) => {
-    res.render('index', {pageTitle: 'کارهای روزمره'})
-})
+
 
 app.listen(3000, () => {
     console.log('server is running on port 3000')
