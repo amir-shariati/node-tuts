@@ -28,7 +28,7 @@ class Todo {
         fs.readFile(filePath, (err, data) => {
             if (err) return []
             const todos = JSON.parse(data)
-            return callback(todos)
+            callback(todos)
         })
     }
 }
