@@ -23,6 +23,14 @@ class Todo {
             })
         })
     }
+
+    static fetchAll(callback){
+        fs.readFile(filePath, (err, data) => {
+            if (err) return []
+            const todos = JSON.parse(data)
+            return callback(todos)
+        })
+    }
 }
 
 module.exports = Todo
