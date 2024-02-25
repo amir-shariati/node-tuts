@@ -12,9 +12,15 @@ class Todo {
     }
 
     save(callback){
-        fs.writeFile(filePath, JSON.stringify(this), (err)=>{
-            if(err) callback(err)
-            else callback(null)
+        fs.readFile(filePath, (err, data) => {
+            // if (err) callback(null)
+            const todos = JSON.parse(data)
+            todos.push(this)
+
+            fs.writeFile(filePath, JSON.stringify(todos), (err)=>{
+                if(err) callback(err)
+                else callback(null)
+            })
         })
     }
 }
