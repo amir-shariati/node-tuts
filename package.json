@@ -7,6 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon 011-Todo-Project/server.js"
   },
+  "nodemonConfig": {
+    "ext": "js,mjs,cjs",
+    "ignore": ["**/test/**", "**/docs/**", "*.json"],
+    "delay": 2500
+  },
   "//": {
     "type": "module"
   },
