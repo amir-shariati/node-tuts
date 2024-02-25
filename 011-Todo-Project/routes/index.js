@@ -4,4 +4,6 @@ const todosController = require('../controllers/todos')
 
 const router = express.Router()
 
+router.get('/', todosController.getIndex)
+
 module.exports = router
