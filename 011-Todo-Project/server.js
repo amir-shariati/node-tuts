@@ -21,6 +21,7 @@ app.set('views', path.join(__dirname, 'views'))
 setStatics(app)
 
 //Routes
+app.use(indexRoutes)
 app.use('/admin', adminRoutes)
 
 
